@@ -1,2 +1,2 @@
-# Full Stack Development with Angular and Spring boot
- Full Stack Development with Angular and Spring boot, by BPB Publications
+# Full Stack Development with Angular and Spring Boot
+ Full Stack Development with Angular and Spring Boot, by BPB Publications
