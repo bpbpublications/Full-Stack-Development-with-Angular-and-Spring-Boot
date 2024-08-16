@@ -1,0 +1,13 @@
+<span class="center">parent works! </span><br>
+<button (click)="incrementCtr()">click to increment.. from Parent</button>
+
+<table >
+<tr>
+<td>
+<app-child1 [ctrApp]="appCtr"></app-child1>
+</td>
+<td>
+<app-child2  [parentCtr]="appCtrSignal()"></app-child2>
+</td>
+</tr>
+</table>

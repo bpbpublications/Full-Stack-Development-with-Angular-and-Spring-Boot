@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean id="
+dataSource " com.sj.MyDataSource destroymethod="close">
+<property name="driverClass " db.driver }"
+<property name="jdbcUrl " value="${db.url}"
+<property name="user" value="${db.username }"
+<property name="password" value="${db.password }"
+</bean>
+<jdbc:initialize database data source=" dataSource
+<jdbc:script location=" classpath:config schema.sql "
+<jdbc:script location=" classpath:config data.sql "
+</jdbc:initialize database>
+
+<context:component-scan></context:component-scan>

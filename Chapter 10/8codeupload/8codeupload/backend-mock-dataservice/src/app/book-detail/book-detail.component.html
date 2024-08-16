@@ -1,0 +1,11 @@
+<p>book-detail works!</p>
+Enter book id:
+<input type="text" name="bid" id="bid" (change)="handleChange($event)"  >
+<div *ngIf="book">
+{{book.title}} 
+</div>
+<div *ngIf="errorMsg!=''">
+    {{errorMsg}}
+</div>
+
+

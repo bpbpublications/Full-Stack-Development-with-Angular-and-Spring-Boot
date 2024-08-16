@@ -1,0 +1,8 @@
+<p>toggle works!</p>
+<div *ngIf="isOn">
+<b>{{ msg }} </b>
+</div>
+<div *ngIf="!isOn">
+<b>Its off</b>
+</div>
+<button (click)="onClick()"> Click to toggle !!!</button>

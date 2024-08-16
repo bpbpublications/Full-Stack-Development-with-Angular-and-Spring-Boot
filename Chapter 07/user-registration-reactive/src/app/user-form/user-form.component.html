@@ -1,0 +1,61 @@
+<form [formGroup]="regiForm" (ngSubmit)="handleSubmit()" novalidate>
+      <p>
+        <label for="name"> Name </label>
+        <input type="text" id="name" name="name" formControlName="name">
+        <div
+        *ngIf="!regiForm.controls.name?.valid && (regiForm.controls.name?.dirty
+        ||regiForm.controls.name?.touched)" class="alert alert-danger">
+           Name is not valid
+         </div>
+       
+      <p>
+        <label for="address">Address </label>
+        <input type="text" id="address" name="address"  formControlName="address"    >
+        <div
+        *ngIf="!regiForm.controls.address?.valid && (regiForm.controls.address?.dirty
+        ||regiForm.controls.address?.touched)" class="alert alert-danger">
+           Address is not valid
+         </div>
+      
+      <p>
+        <label for="city">City </label>
+        <input type="text" id="city" name="city"formControlName="city">
+        <div
+        *ngIf="!regiForm.controls.city?.valid && (regiForm.controls.city?.dirty
+        ||regiForm.controls.city?.touched)" class="alert alert-danger">
+           City is not valid
+         </div>
+           
+      <p>
+        <label for="email">Email </label>
+        <input type="email" id="email" name="email"formControlName="email">
+        <div
+        *ngIf="!regiForm.controls.email?.valid && (regiForm.controls.email?.dirty
+        ||regiForm.controls.email?.touched)" class="alert alert-danger">
+           Email is not valid
+         </div>
+           
+      <p>
+        <label for="password">Password </label>
+        <input type="password"  id="password" name="password" formControlName="password" #pw> 
+        <div
+        *ngIf="!regiForm.controls.password?.valid && (regiForm.controls.password?.dirty
+        ||regiForm.controls.password?.touched)" class="alert alert-danger">
+           Password is not valid
+         </div>
+          
+      <p>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" 
+        formControlName="confirmPassword" #cpw
+        (change)='checkPasswords(pw.value, cpw.value)'>
+        <div
+        *ngIf="!regiForm.controls.confirmPassword?.valid && (regiForm.controls.confirmPassword?.dirty
+        ||regiForm.controls.confirmPassword?.touched)" class="alert alert-danger">
+           Password & confirm-password do not match
+         </div>
+  
+      <p>
+        <button type="submit" [disabled]="!regiForm.valid">Submit</button>
+      </p>
+</form>
