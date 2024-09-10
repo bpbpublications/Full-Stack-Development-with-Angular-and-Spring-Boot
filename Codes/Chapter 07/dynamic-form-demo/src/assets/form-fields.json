@@ -1,0 +1,46 @@
+[
+       {
+        "fieldName": "Name",
+        "fieldType": "text",
+        "required": true,
+        "validator":"required"
+        },
+        {
+            "fieldName": "Email",
+            "fieldType": "email",
+            "required": true,
+            "validator":"email"
+        },
+        {
+            "fieldName": "Message",
+            "fieldType": "text",
+            "required": true,
+            "validator":"required"
+        },
+        {
+            "fieldName": "Address",
+            "fieldType": "text",
+            "required": true,
+            "validator":"required"
+        },
+        {
+            "fieldName": "Age",
+            "fieldType": "number",
+            "required": true,
+            "validator":"required"
+        },
+
+        {
+
+           
+            "fieldName": "password",
+            "fieldType": "password",
+            "required": true,
+            "validator":"required"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+
+        }
+
+        
+
+
+]
