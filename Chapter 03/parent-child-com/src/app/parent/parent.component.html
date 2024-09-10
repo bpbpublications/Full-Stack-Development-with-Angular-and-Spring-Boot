@@ -1,9 +1,0 @@
-<div style="background-color: aqua;" >
-    {{title}}
-</div>
-
-<app-child [messageFromParent]= "messageToChild" (messageToParent)="getMessage($event)"></app-child>
-
-<div style="background-color: aqua;" >
-<h4  > Message received from child: <span style="color:#FF0000"><i>{{messageFromChild}}</i></span></h4>
-</div>
